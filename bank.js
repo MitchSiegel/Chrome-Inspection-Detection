@@ -3,12 +3,13 @@ let htmlCache;
 //if you want to change the HTML and don't want the alert to pop, just set this to true
 // the function will set to false after the cache is updated.
 let updatedPage = false;
+let elementToSave = "#transactions";
 window.onload = function() {
     // get the initial html structure of protected element 
-    saveElement("#transactions",false);
+    saveElement(elementToSave,false);
     //check the cache every x number of second
     let secondsPerCheck = 2
-    setInterval(function(){ checkProtectedElement("#transactions"); }, secondsPerCheck * 1000);
+    setInterval(function(){ checkProtectedElement(elementToSave); }, secondsPerCheck * 1000);
 };
 function saveElement(protectedElement,refreshCache){
     let protectedElementHTML = document.querySelector(protectedElement);
