@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link async rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <script async src="./bank.js"></script>
+    <title>Document</title>
+</head>
+<body style="padding:50px;">
+    this is clearly a barebones concept but it should work the same anyway.
+    <table class="table is-bordered" id="transactions">
+        <div class="thead">
+        </div>
+        <div class="tbody">
+            <tr>
+                <th>transaction</th>
+                <th>amount</th>
+            </tr>
+            <tr class="transaction">
+                <td class="retailer">Apple.com</td>
+                <td class="amount">-$3</td>
+            </tr>
+
+        </div>
+    </table>
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="notification is-danger">
+                <button class="delete"></button>
+                    Warning, this page might have been hacked locally (or whatever scary words you want here), for your safety this page will be reload automatically and you will need to sign in again.
+              </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+      </div>
+
+</body>
+</html>
